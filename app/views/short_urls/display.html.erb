@@ -1,17 +1,5 @@
 <h1>Your Shortened URL</h1>
-
-<p>
-  Original URL: <%= @short_url.original_url %>
-</p>
-
-<p>
-  Short URL: <a href="<%= short_path(@short_url.short_code) %>"><%= request.base_url %>/<%= @short_url.short_code %></a>
-</p>
-
-<p>
-  You can copy and share the short URL above.
-</p>
-
-<p>
-  <%= link_to "Create another", new_short_url_path %>
-</p>
+<p> Original URL: <%= @short_url.original_url %> </p>
+<p> Short URL: <a href="<%= short_path(@short_url.short_code) %>"><%= request.base_url %>/<%= @short_url.short_code %></a></p>
+<p> You can copy and share the short URL above. </p>
+<p><%= link_to "Create another", new_short_url_path %></p>
