@@ -1,24 +1,45 @@
-# README
+# 🔗 Rails URL Shortener
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Ruby on Rails application that shortens long URLs and generates short redirectable.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 📂 Project Setup
 
-* System dependencies
+### ✅ Prerequisites
 
-* Configuration
+- Ruby (>= 3.2)
+- Rails (>= 7)
+- Bundler (`gem install bundler --user-install`)
+- SQLite3 (for development)
 
-* Database creation
+---
 
-* Database initialization
+### 🛠️ To Run Locally
 
-* How to run the test suite
+1. **Clone the repository**
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+git clone https://github.com/your-username/url-shortener.git
+cd url-shortener
+```
 
-* Deployment instructions
+2. **Install dependencies locally**
 
-* ...
+```bash
+bundle install --path vendor/bundle
+```
+
+3. **Set up the database**
+
+```bash
+bundle exec rails db:create db:migrate
+```
+
+4. **Start the development server**
+
+```bash
+bundle exec rails server
+```
+
+Then visit 👉 `http://[::1]:3000`
