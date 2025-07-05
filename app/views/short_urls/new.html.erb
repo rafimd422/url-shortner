@@ -1,15 +1,12 @@
 <h1>URL Shortener</h1>
-
 <%= form_with model: @short_url, url: short_urls_path, local: true do |f| %>
   <% if flash[:alert] %>
     <p style="color: red;"><%= flash[:alert] %></p>
   <% end %>
-
   <div>
     <%= f.label :original_url, "Enter a URL to shorten:" %><br>
     <%= f.text_field :original_url, size: 60, placeholder: "https://example.com" %>
   </div>
-
   <br>
   <%= f.submit "Shorten" %>
 <% end %>
